@@ -1,6 +1,8 @@
 {
-	"name": "@frederichoule/sessionkit",
+	"name": "sessionkit",
 	"version": "0.0.1",
+	"description": "Ultra-lightweight session management for your SvelteKit applications",
+	"main": "./dist/index.js",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",

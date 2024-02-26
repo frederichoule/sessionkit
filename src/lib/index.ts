@@ -18,14 +18,13 @@ export class SessionKit {
 		private cookieName: string = 'sessionkit',
 		private cookieAttributes = defaultCookieAttributes,
 		private nanoIdLength: number = 21
-	) { }
+	) {}
 
 	private getPattern(): RegExp {
 		return new RegExp(`[a-zA-Z0-9-_]{${this.nanoIdLength}}`, 'i');
 	}
 
 	public async get<T>(cookies: Cookies): Promise<T> {
-
 		let sessionId = cookies.get(this.cookieName);
 
 		if (!sessionId || !this.getPattern().test(sessionId)) {
@@ -34,7 +33,6 @@ export class SessionKit {
 
 		cookies.set(this.cookieName, sessionId, this.cookieAttributes);
 
-		return await this.store<T>(sessionId) as T;
+		return (await this.store<T>(sessionId)) as T;
 	}
-
 }
