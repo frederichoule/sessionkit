@@ -11,7 +11,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:frederichoule/sessionkit.git"
+		"url": "git+ssh://git@github.com/frederichoule/sessionkit.git"
 	},
 	"license": "MIT",
 	"author": "Frederic Houle <frederic@frederichoule.com> (https://frederichoule.com)",
