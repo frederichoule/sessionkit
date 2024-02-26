@@ -1,8 +1,9 @@
 {
 	"name": "sessionkit",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"description": "Ultra-lightweight session management for your SvelteKit applications",
 	"main": "./dist/index.js",
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
